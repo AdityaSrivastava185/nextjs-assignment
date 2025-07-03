@@ -43,6 +43,7 @@ pages/                         # (Optional, if fallback Pages Router used)
 public/                        # Static assets
 
 ---
+```
 
 ## 💻 Tech Stack
 
@@ -53,7 +54,6 @@ public/                        # Static assets
 - **Vercel** *(optional deployment)*
 
 ---
-```
 
 ### 1. Clone the repository
 
