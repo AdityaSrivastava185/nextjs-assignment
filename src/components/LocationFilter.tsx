@@ -24,15 +24,15 @@ export default function LocationFilter({ locations, selectedLocation, onLocation
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
-        <span className="flex items-center">
-          <svg className="w-4 h-4 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <span className="flex items-center text-black">
+          <svg className="w-4 h-4 mr-2 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
           {selectedLocation === "All" ? "All Locations" : selectedLocation}
         </span>
         <svg
-          className={`w-4 h-4 text-gray-500 transition-transform ${isOpen ? "rotate-180" : ""}`}
+          className={`w-4 h-4 text-black transition-transform ${isOpen ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -47,7 +47,7 @@ export default function LocationFilter({ locations, selectedLocation, onLocation
             <button
               onClick={() => handleLocationSelect("All")}
               className={`w-full px-4 py-2 text-left hover:bg-gray-100 focus:outline-none focus:bg-gray-100 ${
-                selectedLocation === "All" ? "bg-blue-50 text-blue-600" : "text-gray-700"
+                selectedLocation === "All" ? "bg-blue-50 text-blue-600" : "text-black"
               }`}
             >
               All Locations
@@ -57,7 +57,7 @@ export default function LocationFilter({ locations, selectedLocation, onLocation
                 key={location}
                 onClick={() => handleLocationSelect(location)}
                 className={`w-full px-4 py-2 text-left hover:bg-gray-100 focus:outline-none focus:bg-gray-100 ${
-                  selectedLocation === location ? "bg-blue-50 text-blue-600" : "text-gray-700"
+                  selectedLocation === location ? "bg-blue-50 text-blue-600" : "text-black"
                 }`}
               >
                 {location}
