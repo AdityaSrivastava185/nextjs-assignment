@@ -53,6 +53,7 @@ public/                        # Static assets
 - **Vercel** *(optional deployment)*
 
 ---
+```
 
 ### 1. Clone the repository
 
