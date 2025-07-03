@@ -72,3 +72,33 @@ npm install
 ```bash
 npm run dev
 ```
+
+## 🗂️ Project Structure Explanation
+
+- All mock events are stored and managed in:  
+  `src/lib/events-data.ts`
+
+- Routing is handled using the **App Router**:  
+  `src/app/(pages)/[id]/page.tsx`
+
+- `HeroSection.tsx` controls filtering and passes the filtered results to:  
+  `HeroSectionEventCard.tsx`
+
+- Components are:
+  - Reusable  
+  - Semantic  
+  - Follow best practices for **accessibility** and **SEO**
+
+## 🚀 Improvements (If More Time Available)
+
+- ✅ Add unit tests for filtering and routing logic  
+- 🔄 Implement pagination or infinite scroll  
+- 🌐 Integrate real API for live events  
+- 🌙 Add dark mode toggle
+
+---
+
+## 🧑‍💻 Author
+
+**Aditya Srivastava**  
+Frontend Developer & UI Enthusiast  
